@@ -33,5 +33,3 @@
 (define results (check-code lines-list 50))
 
 (count (λ (x) (= x 0)) results) ; 1048
-
-#| Part 2 |#
