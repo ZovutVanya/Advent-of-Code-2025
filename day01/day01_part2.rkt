@@ -19,6 +19,9 @@
              new-position))]
       [(eq? letter '#\R)
        (let ([new-position (+ position r)])
+         ; this is the hardest part, because you want it to
+         ; save zeros correctly (> 99), but not add the
+         ; times it arrives at 100 to the pass-by-counter
          (if (> new-position 99)
              (begin
                (cond
